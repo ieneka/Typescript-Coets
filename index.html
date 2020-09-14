@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!--BOOTSTRAP THEME-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="./models/rocketGroup.js"></script>
+    <script src="./models/rocket.js"></script>
+    <script src="./controllers/controllers.js"></script>
+    <style>
+        p{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        body{
+            background-image: url("./img/2299682.jpg")  ;
+        }
+    </style>
+</head>
+<body class="container" onload="init()">
+
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center display-1">Rockets</h1>
+            <button class="bg-warning w-100" onclick="showRockets()">Show Rockets</button>
+        </div>
+    </div>
+
+    <div class="row bg-info" id="viewRockets"></div>
+    
+</body>
+</html>
